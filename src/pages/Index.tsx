@@ -59,32 +59,32 @@ const Index = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-2xl mx-auto mb-10">
           <Link to="/about">
             <TerminalButton variant="outline" className="w-full">
-              > ABOUT
+              {'>'} ABOUT
             </TerminalButton>
           </Link>
           <Link to="/discography">
             <TerminalButton variant="outline" className="w-full">
-              > DISCOGRAPHY
+              {'>'} DISCOGRAPHY
             </TerminalButton>
           </Link>
           <Link to="/mixes">
             <TerminalButton variant="outline" className="w-full">
-              > MIXES
+              {'>'} MIXES
             </TerminalButton>
           </Link>
           <Link to="/playlists">
             <TerminalButton variant="outline" className="w-full">
-              > PLAYLISTS
+              {'>'} PLAYLISTS
             </TerminalButton>
           </Link>
           <Link to="/events">
             <TerminalButton variant="outline" className="w-full">
-              > EVENTS
+              {'>'} EVENTS
             </TerminalButton>
           </Link>
           <Link to="/links">
             <TerminalButton variant="outline" className="w-full">
-              > LINKS
+              {'>'} LINKS
             </TerminalButton>
           </Link>
         </div>

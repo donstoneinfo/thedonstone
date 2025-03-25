@@ -73,7 +73,7 @@ const TerminalNavbar: React.FC = () => {
                 )}
                 onClick={() => setIsMenuOpen(false)}
               >
-                > {route.label}
+                {'>'}  {route.label}
               </Link>
             ))}
           </div>
