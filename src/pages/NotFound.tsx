@@ -1,26 +1,64 @@
-import { useLocation } from "react-router-dom";
-import { useEffect } from "react";
+
+import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+import Terminal from '@/components/Terminal';
+import TerminalButton from '@/components/TerminalButton';
 
 const NotFound = () => {
-  const location = useLocation();
-
+  const [text, setText] = useState('');
+  const errorMessage = 'ERROR 404: FILE NOT FOUND';
+  
   useEffect(() => {
-    console.error(
-      "404 Error: User attempted to access non-existent route:",
-      location.pathname
-    );
-  }, [location.pathname]);
+    let index = 0;
+    const timer = setInterval(() => {
+      if (index < errorMessage.length) {
+        setText(prev => prev + errorMessage.charAt(index));
+        index++;
+      } else {
+        clearInterval(timer);
+      }
+    }, 100);
+    
+    return () => clearInterval(timer);
+  }, []);
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">404</h1>
-        <p className="text-xl text-gray-600 mb-4">Oops! Page not found</p>
-        <a href="/" className="text-blue-500 hover:text-blue-700 underline">
-          Return to Home
-        </a>
+    <Terminal>
+      <div className="min-h-screen flex flex-col items-center justify-center p-4">
+        <div className="w-full max-w-md mx-auto text-center">
+          <div className="font-terminal text-amber mb-6">
+            <div className="text-4xl mb-4 glitch">{text}</div>
+            
+            <pre className="ascii-art text-amber mb-6">
+{`     .-.
+    (o.o)
+     |=|
+    __|__
+  //.=|=.\\\\
+ // .=|=. \\\\
+ \\\\ .=|=. //
+  \\\\(_=_)//
+     (:)
+`}
+            </pre>
+            
+            <div className="mb-6 font-mono">
+              <p className="mb-2">// The requested file could not be located.</p>
+              <p className="mb-2">// System suggests returning to a valid access point.</p>
+              <p>// Press any key to continue or return to HOME...</p>
+            </div>
+            
+            <div className="flex justify-center mt-8">
+              <Link to="/">
+                <TerminalButton>
+                  RETURN TO HOME
+                </TerminalButton>
+              </Link>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+    </Terminal>
   );
 };
 
