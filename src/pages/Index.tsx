@@ -1,12 +1,20 @@
-
 import React, { useEffect, useState } from 'react';
 import TerminalContainer from '@/components/TerminalContainer';
 import TerminalTitle from '@/components/TerminalTitle';
 import TerminalButton from '@/components/TerminalButton';
 import { Link } from 'react-router-dom';
+import { useIsMobile } from '@/hooks/use-mobile';
 
-const AsciiLogo = () => (
-  <pre className="ascii-art text-amber font-mono mb-8 text-center overflow-x-auto">
+const AsciiLogo = () => {
+  const isMobile = useIsMobile();
+  
+  if (isMobile) {
+    return null; // Don't render ASCII art on mobile
+  }
+  
+  return (
+    <div className="mb-8 text-center">
+      <pre className="ascii-art text-amber font-mono inline-block text-center">
 {`  
   ████████╗██╗  ██╗███████╗    ██████╗  ██████╗ ███╗   ██╗    ███████╗████████╗ ██████╗ ███╗   ██╗███████╗
   ╚══██╔══╝██║  ██║██╔════╝    ██╔══██╗██╔═══██╗████╗  ██║    ██╔════╝╚══██╔══╝██╔═══██╗████╗  ██║██╔════╝
@@ -16,8 +24,10 @@ const AsciiLogo = () => (
      ╚═╝   ╚═╝  ╚═╝╚══════╝    ╚═════╝  ╚═════╝ ╚═╝  ╚═══╝    ╚══════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═══╝╚══════╝
                                                                                                                                                                           
 `}
-  </pre>
-);
+      </pre>
+    </div>
+  );
+};
 
 const Index = () => {
   const [loadingText, setLoadingText] = useState('');

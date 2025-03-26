@@ -11,66 +11,36 @@ interface ReleaseProps {
   year: string;
   label: string;
   cat: string;
-  tracklist: string[];
+  description: string;
   listen?: string;
 }
 
-const Release: React.FC<ReleaseProps> = ({ title, type, year, label, cat, tracklist, listen }) => {
+const Release: React.FC<ReleaseProps> = ({ title, type, year, label, cat, description, listen }) => {
   return (
     <TerminalCard className="mb-6">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-        <div className="md:col-span-1">
-          <div className="border border-amber border-opacity-50 p-2 h-full">
-            <div className="bg-terminal-darkgray aspect-square flex items-center justify-center text-amber font-terminal p-4">
-              <div className="text-center">
-                <p className="text-xs mb-2">[{type}]</p>
-                <p className="text-lg mb-1">{title}</p>
-                <p className="text-xs mb-4">{year}</p>
-                <pre className="text-xs">
-{`  ___________
- /     ___   \\
-/     /   \\   \\
-|    |     |   |
-|    |     |   |
-\\     \\___/   /
- \\___________ /`}
-                </pre>
-                <p className="text-xs mt-4">{label}</p>
-                <p className="text-xs opacity-70">{cat}</p>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div className="p-4">
+        <h3 className="text-xl font-terminal text-amber mb-3">&gt; {title}</h3>
         
-        <div className="md:col-span-2">
-          <h3 className="text-xl font-terminal text-amber mb-3">&gt; {title}</h3>
+        <div className="font-mono">
+          <p className="mb-3 text-amber-light text-sm">
+            <span className="text-amber-light opacity-70">[{type}] </span>{year} | 
+            <span className="text-amber-light opacity-70"> LABEL: </span>{label} | 
+            <span className="text-amber-light opacity-70"> CATALOG: </span>{cat}
+          </p>
           
-          <div className="font-mono">
-            <p className="mb-3 text-amber-light text-sm">
-              <span className="text-amber-light opacity-70">DATE: </span>{year} | 
-              <span className="text-amber-light opacity-70"> LABEL: </span>{label} | 
-              <span className="text-amber-light opacity-70"> CATALOG: </span>{cat}
-            </p>
-            
-            <div className="mb-4">
-              <h4 className="text-amber-light text-sm mb-2">// TRACKLIST:</h4>
-              <ol className="list-decimal pl-5 text-amber text-opacity-90">
-                {tracklist.map((track, index) => (
-                  <li key={index} className="mb-1">{track}</li>
-                ))}
-              </ol>
-            </div>
-            
-            {listen && (
-              <div className="mt-4">
-                <a href={listen} target="_blank" rel="noopener noreferrer">
-                  <TerminalButton size="sm">
-                    LISTEN NOW
-                  </TerminalButton>
-                </a>
-              </div>
-            )}
+          <div className="mb-4 text-amber text-opacity-90">
+            <p className="mb-4">{description}</p>
           </div>
+          
+          {listen && (
+            <div className="mt-4">
+              <a href={listen} target="_blank" rel="noopener noreferrer">
+                <TerminalButton size="sm">
+                  LISTEN NOW
+                </TerminalButton>
+              </a>
+            </div>
+          )}
         </div>
       </div>
     </TerminalCard>
@@ -93,13 +63,7 @@ const Discography = () => {
         year="2023"
         label="TERMINAL TECHNO RECORDS"
         cat="TTR-023"
-        tracklist={[
-          "Neural Decay",
-          "Synaptic Overload",
-          "Memory Fragments",
-          "Data Corruption",
-          "Neural Decay (Machine Remix)"
-        ]}
+        description="Neural Decay explores the intersection of artificial intelligence and electronic music. This EP features glitched-out rhythms, complex neural network-inspired sound design, and haunting atmospheric elements. Five tracks that blur the line between the organic and the synthetic."
         listen="https://soundcloud.com"
       />
       
@@ -109,18 +73,7 @@ const Discography = () => {
         year="2022"
         label="SYSTEM FAILURE AUDIO"
         cat="SFA-112"
-        tracklist={[
-          "Abandoned Corridor",
-          "Steel Structure",
-          "Concrete Floor",
-          "Emergency Lights",
-          "Control Room",
-          "Hidden Entrance",
-          "Industrial Machinery",
-          "System Failure",
-          "Emergency Exit",
-          "Warehouse Floor"
-        ]}
+        description="An immersive sonic journey through abandoned industrial spaces. Warehouse Blueprints captures the essence of after-hours techno with cavernous reverbs, mechanical percussion, and hypnotic sequences. The 10-track album maps out different areas of an imaginary warehouse, from concrete floors to hidden entrances."
         listen="https://bandcamp.com"
       />
       
@@ -130,12 +83,7 @@ const Discography = () => {
         year="2021"
         label="DARK MATTER RECORDINGS"
         cat="DMR-045"
-        tracklist={[
-          "Midnight Signal",
-          "Frequency Modulation",
-          "Twilight Zone",
-          "Atmospheric Pressure"
-        ]}
+        description="A four-track EP exploring the liminal space between day and night. Twilight Frequencies combines ambient textures with driving rhythms, creating a soundtrack for the transitional moments. Features collaborations with renowned sound designers and field recordings captured at dusk."
         listen="https://spotify.com"
       />
       
@@ -145,12 +93,7 @@ const Discography = () => {
         year="2020"
         label="UNDERGROUND COLLECTIVE"
         cat="UC-017"
-        tracklist={[
-          "Initiation Sequence",
-          "Ancient Code",
-          "Digital Ritual",
-          "Ceremony Completion"
-        ]}
+        description="Electronic Rituals delves into ceremonial and tribal influences, reimagined through modern electronic production. Each track represents a different stage of a digital ceremony, with hypnotic polyrhythms and evolving synthesizer sequences that build to transcendent climaxes."
         listen="https://bandcamp.com"
       />
       
@@ -160,16 +103,7 @@ const Discography = () => {
         year="2019"
         label="ALGORITHM RECORDINGS"
         cat="AR-029"
-        tracklist={[
-          "Binary Code",
-          "Algorithmic",
-          "Data Fragments",
-          "Recursive Function",
-          "Infinite Loop",
-          "Command Line",
-          "Error Message",
-          "Digital Dissolution"
-        ]}
+        description="The debut album that established The Don Stone's unique sound. Binary Structures explores the relationship between code and music through meticulously programmed sequences, generative compositions, and data-driven sound design. A conceptual journey through the architecture of digital systems."
         listen="https://spotify.com"
       />
     </TerminalContainer>
