@@ -114,36 +114,36 @@ const Discography = () => {
       />
       
       <Release 
-        title="TWILIGHT FREQUENCIES"
-        type="EP"
-        year="2021"
-        label="DARK MATTER RECORDINGS"
-        cat="DMR-045"
-        description="A four-track EP exploring the liminal space between day and night. Twilight Frequencies combines ambient textures with driving rhythms, creating a soundtrack for the transitional moments. Features collaborations with renowned sound designers and field recordings captured at dusk."
+        title="The 13th Floor"
+        type="Single"
+        year="2024"
+        label="Interlinked Records"
+        cat="INT-013"
+        description="The 13th Floor is descent into dark melodic grooves from TheDonStone"
         listen="https://interlinkedai.bandcamp.com/album/zero-theorem"
-        bandcampId="1628666844"
+        bandcampId="1919827054"
       />
       
       <Release 
-        title="ELECTRONIC RITUALS"
+        title="Total Recall"
         type="EP"
-        year="2020"
-        label="UNDERGROUND COLLECTIVE"
-        cat="UC-017"
-        description="Electronic Rituals delves into ceremonial and tribal influences, reimagined through modern electronic production. Each track represents a different stage of a digital ceremony, with hypnotic polyrhythms and evolving synthesizer sequences that build to transcendent climaxes."
-        listen="https://interlinkedai.bandcamp.com/album/zero-theorem"
-        bandcampId="1628666844"
+        year="2024"
+        label="Interlinked Records"
+        cat="INT-012"
+        description="Total Recall is a hard pulse-pumping peak time techno EP."
+        listen="https://interlinkedai.bandcamp.com/album/total-recall"
+        bandcampId="711447107"
       />
       
       <Release 
-        title="BINARY STRUCTURES"
-        type="ALBUM"
-        year="2019"
-        label="ALGORITHM RECORDINGS"
-        cat="AR-029"
-        description="The debut album that established The Don Stone's unique sound. Binary Structures explores the relationship between code and music through meticulously programmed sequences, generative compositions, and data-driven sound design. A conceptual journey through the architecture of digital systems."
-        listen="https://interlinkedai.bandcamp.com/album/zero-theorem"
-        bandcampId="1628666844"
+        title="Ms Ministry"
+        type="Single"
+        year="2014"
+        label="Interlinked Records"
+        cat="INT-011"
+        description="Ms. Minsitry fuses hard dark brooding IDM with Indide Dance vibes."
+        listen="https://interlinkedai.bandcamp.com/track/ms-ministry"
+        bandcampId="1120552345"
       />
     </TerminalContainer>
   );
