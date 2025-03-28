@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import TerminalContainer from '@/components/TerminalContainer';
 import TerminalTitle from '@/components/TerminalTitle';
 import TerminalCard from '@/components/TerminalCard';
@@ -13,9 +13,16 @@ interface ReleaseProps {
   cat: string;
   description: string;
   listen?: string;
+  bandcampId?: string; // Added bandcampId property
 }
 
-const Release: React.FC<ReleaseProps> = ({ title, type, year, label, cat, description, listen }) => {
+const Release: React.FC<ReleaseProps> = ({ title, type, year, label, cat, description, listen, bandcampId }) => {
+  const [showPlayer, setShowPlayer] = useState(false);
+
+  const togglePlayer = () => {
+    setShowPlayer(!showPlayer);
+  };
+
   return (
     <TerminalCard className="mb-6">
       <div className="p-4">
@@ -32,7 +39,34 @@ const Release: React.FC<ReleaseProps> = ({ title, type, year, label, cat, descri
             <p className="mb-4">{description}</p>
           </div>
           
-          {listen && (
+          {listen && bandcampId && (
+            <div className="mt-4">
+              <TerminalButton 
+                size="sm" 
+                onClick={togglePlayer}
+                className={showPlayer ? "mb-4" : ""}
+              >
+                {showPlayer ? "HIDE PLAYER" : "LISTEN NOW"}
+              </TerminalButton>
+              
+              {showPlayer && (
+                <div className="mt-4 w-full">
+                  <iframe 
+                    style={{ border: 0, width: '100%', height: '120px' }} 
+                    src={`https://bandcamp.com/EmbeddedPlayer/album=${bandcampId}/size=large/bgcol=333333/linkcol=e99708/tracklist=false/artwork=small/transparent=true/`} 
+                    seamless
+                    title={`${title} on Bandcamp`}
+                  >
+                    <a href={listen} target="_blank" rel="noopener noreferrer">
+                      {title}
+                    </a>
+                  </iframe>
+                </div>
+              )}
+            </div>
+          )}
+          
+          {listen && !bandcampId && (
             <div className="mt-4">
               <a href={listen} target="_blank" rel="noopener noreferrer">
                 <TerminalButton size="sm">
@@ -64,7 +98,8 @@ const Discography = () => {
         label="TERMINAL TECHNO RECORDS"
         cat="TTR-023"
         description="Neural Decay explores the intersection of artificial intelligence and electronic music. This EP features glitched-out rhythms, complex neural network-inspired sound design, and haunting atmospheric elements. Five tracks that blur the line between the organic and the synthetic."
-        listen="https://soundcloud.com"
+        listen="https://interlinkedai.bandcamp.com/album/zero-theorem"
+        bandcampId="1628666844"
       />
       
       <Release 
@@ -74,7 +109,8 @@ const Discography = () => {
         label="SYSTEM FAILURE AUDIO"
         cat="SFA-112"
         description="An immersive sonic journey through abandoned industrial spaces. Warehouse Blueprints captures the essence of after-hours techno with cavernous reverbs, mechanical percussion, and hypnotic sequences. The 10-track album maps out different areas of an imaginary warehouse, from concrete floors to hidden entrances."
-        listen="https://bandcamp.com"
+        listen="https://interlinkedai.bandcamp.com/album/zero-theorem"
+        bandcampId="1628666844"
       />
       
       <Release 
@@ -84,7 +120,8 @@ const Discography = () => {
         label="DARK MATTER RECORDINGS"
         cat="DMR-045"
         description="A four-track EP exploring the liminal space between day and night. Twilight Frequencies combines ambient textures with driving rhythms, creating a soundtrack for the transitional moments. Features collaborations with renowned sound designers and field recordings captured at dusk."
-        listen="https://spotify.com"
+        listen="https://interlinkedai.bandcamp.com/album/zero-theorem"
+        bandcampId="1628666844"
       />
       
       <Release 
@@ -94,7 +131,8 @@ const Discography = () => {
         label="UNDERGROUND COLLECTIVE"
         cat="UC-017"
         description="Electronic Rituals delves into ceremonial and tribal influences, reimagined through modern electronic production. Each track represents a different stage of a digital ceremony, with hypnotic polyrhythms and evolving synthesizer sequences that build to transcendent climaxes."
-        listen="https://bandcamp.com"
+        listen="https://interlinkedai.bandcamp.com/album/zero-theorem"
+        bandcampId="1628666844"
       />
       
       <Release 
@@ -104,7 +142,8 @@ const Discography = () => {
         label="ALGORITHM RECORDINGS"
         cat="AR-029"
         description="The debut album that established The Don Stone's unique sound. Binary Structures explores the relationship between code and music through meticulously programmed sequences, generative compositions, and data-driven sound design. A conceptual journey through the architecture of digital systems."
-        listen="https://spotify.com"
+        listen="https://interlinkedai.bandcamp.com/album/zero-theorem"
+        bandcampId="1628666844"
       />
     </TerminalContainer>
   );
