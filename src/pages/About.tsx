@@ -45,22 +45,21 @@ const About = () => {
             <div className="mb-4">
               <h3 className="text-xl text-amber font-terminal mb-2">&gt; BIO:</h3>
               <p className="text-amber text-opacity-90 mb-3">
-                The Don Stone is a London-based electronic music producer and DJ known for underground warehouse techno, experimental bass, and dark ambient soundscapes.
+                The Don Stone is a Siem Reap-based electronic music producer and DJ known for underground warehouse techno, experimental bass, and dark ambient soundscapes.
               </p>
               <p className="text-amber text-opacity-90">
-                With over a decade in the electronic music scene, The Don Stone has established a reputation for blending raw, hypnotic beats with intricate sound design and immersive atmospheres.
+                With over twenty-five years in the electronic music scene, The Don Stone has established a reputation for blending raw, hypnotic beats with intricate sound design and immersive atmospheres.
               </p>
             </div>
             
             <div className="mb-4 border-t border-amber border-opacity-30 pt-4">
               <h3 className="text-xl text-amber font-terminal mb-2">&gt; SKILLS:</h3>
               <ul className="grid grid-cols-2 gap-2">
-                <li className="text-amber text-opacity-90">- Techno Production</li>
-                <li className="text-amber text-opacity-90">- Sound Design</li>
-                <li className="text-amber text-opacity-90">- DJ Performance</li>
-                <li className="text-amber text-opacity-90">- Ambient Composition</li>
-                <li className="text-amber text-opacity-90">- Hardware Synths</li>
-                <li className="text-amber text-opacity-90">- Modular Systems</li>
+                <li className="text-amber text-opacity-90">- Open-Format DJ Performances</li>
+                <li className="text-amber text-opacity-90">- Event Organization & Promotion</li>
+                <li className="text-amber text-opacity-90">- Private DJ Events</li>
+                <li className="text-amber text-opacity-90">- Music Production Services</li>
+                <li className="text-amber text-opacity-90">- Local and Regional Bookings Available</li>
               </ul>
             </div>
           </div>

@@ -92,25 +92,25 @@ const Discography = () => {
       </div>
       
       <Release 
-        title="NEURAL DECAY"
+        title="Zero Theorem"
         type="EP"
-        year="2023"
-        label="TERMINAL TECHNO RECORDS"
-        cat="TTR-023"
-        description="Neural Decay explores the intersection of artificial intelligence and electronic music. This EP features glitched-out rhythms, complex neural network-inspired sound design, and haunting atmospheric elements. Five tracks that blur the line between the organic and the synthetic."
+        year="2024"
+        label="Interlinked Records"
+        cat="INT-015"
+        description="Abyssal grooves and hypnotic precision collide in Zero Theorem, where TheDonStone crafts a deep, dark minimal techno odyssey. JustFin strips it down further with a stark, minimalist remix that pulses like a machine on the edge of consciousness."
         listen="https://interlinkedai.bandcamp.com/album/zero-theorem"
         bandcampId="1628666844"
       />
       
       <Release 
-        title="WAREHOUSE BLUEPRINTS"
+        title="Back To Mine"
         type="ALBUM"
-        year="2022"
-        label="SYSTEM FAILURE AUDIO"
-        cat="SFA-112"
-        description="An immersive sonic journey through abandoned industrial spaces. Warehouse Blueprints captures the essence of after-hours techno with cavernous reverbs, mechanical percussion, and hypnotic sequences. The 10-track album maps out different areas of an imaginary warehouse, from concrete floors to hidden entrances."
-        listen="https://interlinkedai.bandcamp.com/album/zero-theorem"
-        bandcampId="1628666844"
+        year="2024"
+        label="Interlinked Records"
+        cat="INT-014"
+        description="Back To Mine drifts through the hazy echoes of an all-night rave's aftermath, where deep dub, distorted lofi, and submerged rhythms paint a world between exhaustion and euphoria. TheDonStone crafts a sonic comedown ritual—warm, warped, and lost in the glow of city lights at dawn."
+        listen="https://interlinkedai.bandcamp.com/album/back-to-mine"
+        bandcampId="2917307920"
       />
       
       <Release 
