@@ -88,7 +88,7 @@ const Discography = () => {
       
       <div className="mb-6 font-mono text-amber text-opacity-80">
         <p>// A comprehensive archive of releases by The Don Stone.</p>
-        <p>// Displaying in reverse chronological order.</p>
+        <p>// Support the music by purcashing on Bandcamp or Beatport.</p>
       </div>
       
       <Release 
