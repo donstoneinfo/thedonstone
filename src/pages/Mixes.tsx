@@ -101,12 +101,12 @@ const Mixes = () => {
       />
       
       <Mix 
-        title="Terminal Access: Hard Code"
-        date="2023-02-10"
-        duration="1:22:00"
+        title="SONA001 - Dark Disco"
+        date="2024-02-02"
+        duration="1:00:48"
         genres={['Dark Disco', 'Electro', 'Goth Techno']}
         description="This installment plunges listeners into a relentless fusion of dark disco, underground electro, minimal techno, and goth-inspired EBM. Breaking free from the ordinary, this week’s mix demands attention with pulsating beats and electrifying energy, setting the stage for an immersive auditory adventure."
-        youtubeId="AY3U5PwS2-c&t=122s"
+        youtubeId="L-E95UOLK3Y&t"
       />
     </TerminalContainer>
   );
