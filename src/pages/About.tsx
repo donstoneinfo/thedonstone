@@ -65,56 +65,6 @@ const About = () => {
           </div>
         </div>
       </TerminalCard>
-      
-      <TerminalCard>
-        <h3 className="text-xl text-amber font-terminal mb-4">&gt; PERFORMANCE HISTORY:</h3>
-        <div className="font-mono">
-          <div className="mb-4 pb-3 border-b border-amber border-opacity-20">
-            <p className="text-amber-light">$ 2018 - PRESENT</p>
-            <p className="text-amber font-terminal">WAREHOUSE PROJECT RESIDENT [LONDON, UK]</p>
-            <p className="text-amber text-opacity-70 text-sm">Regular performances at underground warehouse venues across London.</p>
-          </div>
-          
-          <div className="mb-4 pb-3 border-b border-amber border-opacity-20">
-            <p className="text-amber-light">$ 2016 - 2018</p>
-            <p className="text-amber font-terminal">EUROPEAN CLUB CIRCUIT</p>
-            <p className="text-amber text-opacity-70 text-sm">Tours across Berlin, Amsterdam, Barcelona, and Paris.</p>
-          </div>
-          
-          <div className="mb-4">
-            <p className="text-amber-light">$ 2012 - 2016</p>
-            <p className="text-amber font-terminal">UNDERGROUND COLLECTIVE FOUNDER</p>
-            <p className="text-amber text-opacity-70 text-sm">Established "Digital Dystopia" underground event series.</p>
-          </div>
-        </div>
-      </TerminalCard>
-      
-      <TerminalCard>
-        <h3 className="text-xl text-amber font-terminal mb-4">&gt; FEATURED EQUIPMENT:</h3>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 font-mono">
-          <div>
-            <h4 className="text-amber-light mb-2">// HARDWARE:</h4>
-            <ul className="text-amber text-opacity-90">
-              <li>- Elektron Octatrack MK2</li>
-              <li>- Roland TR-8S</li>
-              <li>- Moog Subsequent 37</li>
-              <li>- Make Noise Shared System</li>
-              <li>- Analog Rytm MK2</li>
-            </ul>
-          </div>
-          
-          <div>
-            <h4 className="text-amber-light mb-2">// SOFTWARE:</h4>
-            <ul className="text-amber text-opacity-90">
-              <li>- Ableton Live 11</li>
-              <li>- Native Instruments Komplete</li>
-              <li>- u-he Diva & Repro</li>
-              <li>- Soundtoys Effects Suite</li>
-              <li>- Fabfilter Pro Bundle</li>
-            </ul>
-          </div>
-        </div>
-      </TerminalCard>
     </TerminalContainer>
   );
 };
