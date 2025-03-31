@@ -83,11 +83,11 @@ const Mixes = () => {
       </div>
       
       <Mix 
-        title="Late Night Warehouse Sessions Vol. 3"
-        date="2023-08-15"
-        duration="1:40:00"
-        genres={['Techno', 'Industrial', 'Warehouse']}
-        description="The third installment in the Late Night Warehouse Sessions series. Heavy, hypnotic techno designed for peak-time warehouse settings. Features unreleased tracks and edits."
+        title="SONA003 - Dark Disco, Acid Mix"
+        date="2023-09-24"
+        duration="1:02:00"
+        genres={['Dark Disco', 'Acid Techno', 'Hypnotic Techno']}
+        description="Welcome to the third chapter of the SONA mix series, where TheDonStone takes the sonic experience to unprecedented heights. This installment plunges listeners into a relentless fusion of dark disco, underground electro, minimal techno, and goth-inspired EBM. Breaking free from the ordinary, this week’s mix demands attention with pulsating beats and electrifying energy, setting the stage for an immersive auditory adventure."
         youtubeId="L-E95UOLK3Y"
       />
       
