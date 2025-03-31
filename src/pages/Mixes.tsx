@@ -88,52 +88,25 @@ const Mixes = () => {
         duration="1:02:00"
         genres={['Dark Disco', 'Acid Techno', 'Hypnotic Techno']}
         description="Welcome to the third chapter of the SONA mix series, where TheDonStone takes the sonic experience to unprecedented heights. This installment plunges listeners into a relentless fusion of dark disco, underground electro, minimal techno, and goth-inspired EBM. Breaking free from the ordinary, this week’s mix demands attention with pulsating beats and electrifying energy, setting the stage for an immersive auditory adventure."
-        youtubeId="L-E95UOLK3Y"
+        youtubeId="AY3U5PwS2"
       />
       
       <Mix 
-        title="Ambient Explorations: Void Space"
-        date="2023-05-22"
-        duration="58:30"
-        genres={['Ambient', 'Experimental', 'Drone']}
-        description="A journey through atmospheric soundscapes and minimal compositions. Perfect for deep listening and meditation."
-        youtubeId="5ANXJjXS5kY"
+        title="SONA002 - Hard Peak Time Techno"
+        date="2024-03-23"
+        duration="1:00:05"
+        genres={['Peak-Time Techno', 'Driving Techno', 'Raw Techno']}
+        description="Breaking free from conventional constraints, this week's mix commands attention with its heart-pounding beats, clocking in at over 140 BPM."
+        youtubeId="iKUTZUrcF8E"
       />
       
       <Mix 
         title="Terminal Access: Hard Code"
         date="2023-02-10"
         duration="1:22:00"
-        genres={['Hard Techno', 'Industrial', 'EBM']}
-        description="Hard-hitting industrial techno and EBM focused mix. Raw, energetic and uncompromising selections that push the boundaries of dance music."
-        youtubeId="eTjxoIn8xqQ"
-      />
-      
-      <Mix 
-        title="Digital Dystopia Podcast 042"
-        date="2022-11-05"
-        duration="1:15:00"
-        genres={['Techno', 'Breaks', 'Electro']}
-        description="Guest mix for the Digital Dystopia podcast series. A blend of techno, broken beats and electro influences featuring both classics and cutting edge tracks."
-        youtubeId="muwjp6_fVcY"
-      />
-      
-      <Mix 
-        title="Live at System Failure (London)"
-        date="2022-09-17"
-        duration="1:30:00"
-        genres={['Techno', 'Live Performance', 'Hardware Set']}
-        description="Live recording from System Failure club night in London. A hybrid DJ/hardware set featuring original material and live remixes."
-        youtubeId="e1ww-KcCQRY"
-      />
-      
-      <Mix 
-        title="Morning Sequences"
-        date="2022-07-08"
-        duration="1:05:00"
-        genres={['Dub Techno', 'Deep', 'Atmospheric']}
-        description="Deeper, more atmospheric selections suitable for early morning sets. Focusing on dub techno, spacious rhythms and hypnotic patterns."
-        youtubeId="puu2s5HPFBg"
+        genres={['Dark Disco', 'Electro', 'Goth Techno']}
+        description="This installment plunges listeners into a relentless fusion of dark disco, underground electro, minimal techno, and goth-inspired EBM. Breaking free from the ordinary, this week’s mix demands attention with pulsating beats and electrifying energy, setting the stage for an immersive auditory adventure."
+        youtubeId="AY3U5PwS2"
       />
     </TerminalContainer>
   );
