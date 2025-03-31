@@ -87,8 +87,8 @@ const Mixes = () => {
         date="2023-09-24"
         duration="1:02:00"
         genres={['Dark Disco', 'Acid Techno', 'Hypnotic Techno']}
-        description="Welcome to the third chapter of the SONA mix series, where TheDonStone takes the sonic experience to unprecedented heights. This installment plunges listeners into a relentless fusion of dark disco, underground electro, minimal techno, and goth-inspired EBM. Breaking free from the ordinary, this week’s mix demands attention with pulsating beats and electrifying energy, setting the stage for an immersive auditory adventure."
-        youtubeId="AY3U5PwS2"
+        description="Welcome to the third chapter of the SONA mix series, where TheDonStone takes the sonic experience to unprecedented heights. This installment plunges listeners into a relentless fusion of dark disco, underground electro, minimal techno, and goth-inspired EBM. Breaking free from the ordinary, this week's mix demands attention with pulsating beats and electrifying energy, setting the stage for an immersive auditory adventure."
+        youtubeId="AY3U5PwS2-c"
       />
       
       <Mix 
@@ -105,7 +105,7 @@ const Mixes = () => {
         date="2024-02-02"
         duration="1:00:48"
         genres={['Dark Disco', 'Electro', 'Goth Techno']}
-        description="This installment plunges listeners into a relentless fusion of dark disco, underground electro, minimal techno, and goth-inspired EBM. Breaking free from the ordinary, this week’s mix demands attention with pulsating beats and electrifying energy, setting the stage for an immersive auditory adventure."
+        description="This installment plunges listeners into a relentless fusion of dark disco, underground electro, minimal techno, and goth-inspired EBM. Breaking free from the ordinary, this week's mix demands attention with pulsating beats and electrifying energy, setting the stage for an immersive auditory adventure."
         youtubeId="L-E95UOLK3Y"
       />
     </TerminalContainer>
