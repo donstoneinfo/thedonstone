@@ -61,21 +61,21 @@ const Links = () => {
         
         <LinkItem 
           title="Soundcloud"
-          url="https://soundcloud.com/thedonstone"
+          url="https://soundcloud.com/the-don-stone"
           description="Stream DJ mixes, live recordings, and selected original productions."
           type="music"
         />
         
         <LinkItem 
           title="Bandcamp"
-          url="https://thedonstone.bandcamp.com"
+          url="https://interlinkedai.bandcamp.com/"
           description="Purchase music directly, including exclusive content and limited editions."
           type="music"
         />
         
         <LinkItem 
           title="Spotify"
-          url="https://open.spotify.com/artist/thedonstone"
+          url="https://open.spotify.com/playlist/5RdjzDZl8I6aPaI4ZnWOaN?si=2ca42f045f204449"
           description="Stream official releases and curated playlists."
           type="music"
         />
@@ -121,19 +121,19 @@ const Links = () => {
       </TerminalCard>
       
       <TerminalCard>
-        <h3 className="text-lg font-terminal text-amber border-b border-amber border-opacity-30 pb-2 mb-4">// STORE & MERCH</h3>
+        <h3 className="text-lg font-terminal text-amber border-b border-amber border-opacity-30 pb-2 mb-4">// THE N1GHTW1RE COLLECTIVE</h3>
         
         <LinkItem 
-          title="Official Store"
-          url="https://store.thedonstone.com"
-          description="Official merchandise, limited edition vinyl, and hardware."
+          title="N1ghtw1re"
+          url="https://n1ghtw1re.neocities.org"
+          description="If you’re reading this, the world may already be too far gone. Maybe the systems are already too entrenched, the algorithms too powerful, and the surveillance too pervasive"
           type="store"
         />
         
         <LinkItem 
-          title="Beatport"
+          title="N1ghtw1re Studios"
           url="https://beatport.com/artist/thedonstone"
-          description="Purchase digital releases in various formats."
+          description="Building a better internet, one app at a time."
           type="store"
         />
       </TerminalCard>
@@ -143,7 +143,7 @@ const Links = () => {
         
         <LinkItem 
           title="Booking Inquiries"
-          url="mailto:booking@thedonstone.com"
+          url="mailto:donstoneinfo@gmail.com"
           description="For event bookings and performance inquiries."
           type="other"
         />
@@ -155,12 +155,6 @@ const Links = () => {
           type="other"
         />
         
-        <LinkItem 
-          title="Contact"
-          url="mailto:info@thedonstone.com"
-          description="General inquiries and contact information."
-          type="other"
-        />
       </TerminalCard>
     </TerminalContainer>
   );
