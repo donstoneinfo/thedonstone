@@ -106,7 +106,7 @@ const Mixes = () => {
         duration="1:00:48"
         genres={['Dark Disco', 'Electro', 'Goth Techno']}
         description="This installment plunges listeners into a relentless fusion of dark disco, underground electro, minimal techno, and goth-inspired EBM. Breaking free from the ordinary, this week’s mix demands attention with pulsating beats and electrifying energy, setting the stage for an immersive auditory adventure."
-        youtubeId="L-E95UOLK3Y&t"
+        youtubeId="L-E95UOLK3Y"
       />
     </TerminalContainer>
   );
