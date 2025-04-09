@@ -99,15 +99,15 @@ const Links = () => {
         />
         
         <LinkItem 
-          title="Twitter"
-          url="https://twitter.com/thedonstone"
+          title="Bluesky"
+          url="https://bsky.app/profile/thedonstone.bsky.social"
           description="Real-time updates, music announcements, and scene commentary."
           type="social"
         />
         
         <LinkItem 
           title="Facebook"
-          url="https://facebook.com/thedonstone"
+          url="https://www.facebook.com/the.don.stone"
           description="Event details, releases, and community interaction."
           type="social"
         />
@@ -132,7 +132,7 @@ const Links = () => {
         
         <LinkItem 
           title="N1ghtw1re Studios"
-          url="https://beatport.com/artist/thedonstone"
+          url="https://n1ghtw1re-studios.lovable.app/"
           description="Building a better internet, one app at a time."
           type="store"
         />
@@ -150,8 +150,8 @@ const Links = () => {
         
         <LinkItem 
           title="Press Kit"
-          url="https://thedonstone.com/press"
-          description="Download high-resolution photos and official bio."
+          url="mailto:donstoneinfo@gmail.com"
+          description="Email to receive high-resolution photos and official bio."
           type="other"
         />
         
